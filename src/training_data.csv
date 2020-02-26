@@ -1,0 +1,20 @@
+What time is it?,mod_time
+Can you tell me the time please?,mod_time
+What is the time right now?,mod_time
+What is in the watch now?,mod_time
+What date is it?,mod_date
+What date is it today?,mod_date
+Can you tell me the date please?,mod_date
+What day is it?,mod_day
+what is the day today?,mod_day
+Can you tell me the day please?,mod_day
+Please send SMS to Rahul,mod_sms
+Could you please send SMS for me?,mod_sms
+Send him a SMS,mod_sms
+What is the meaning of life?,mod_life
+Can you tell me,mod_life
+what is the meaning of life?,mod_life
+Search about Mahatma Gandhi,mod_search
+Can you tell me the meaning of table?,mod_search
+Brief me about Mount everest,mod_search
+Search about USA,mod_search 
