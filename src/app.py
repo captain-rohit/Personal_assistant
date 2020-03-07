@@ -27,10 +27,10 @@ def index():
 #
 # @params {"Command":input_query}
 #-----------------------------------------------------------------------------
-@app.route('/decode_command', methods=['POST'])
+@app.route('/decode_command', methods=['GET'])
 def decode_command_post():
 	try:
-		command  = request.json['command']
+		command  = request.args.get('Command')
 		mod_name = decode_command(command)
 		print('Module found - \''+mod_name+'\'')
 		return mod_name
@@ -44,10 +44,10 @@ def decode_command_post():
 #
 # @params {"module":mod_name}
 #-----------------------------------------------------------------------------
-@app.route('/execute_func', methods=['POST'])
+@app.route('/execute_func', methods=['GET'])
 def execute_func_post():
-	mod_name    = request.json['module']
-	input_query = request.json['data']
+	mod_name    = request.args.get('module')
+	input_query = request.args.get('q')
 	module      = __import__(mod_name)
 	print('Executing module \''+mod_name+'\'')
 	module.run(input_query)
