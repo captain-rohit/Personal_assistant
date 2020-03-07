@@ -42,11 +42,11 @@ def run(query):
 		endpoint = endpoint.replace('YOUR_USERNAME', username)
 		endpoint = endpoint.replace('YOUR_PASSWORD', password)
 		endpoint = endpoint.replace('YOUR_RECEIVER', receiver)
-		endpoint = endpoint.replace('YOUR_MESSAGE', message + ' - from Automata')
+		endpoint = endpoint.replace('YOUR_MESSAGE', message + ' - from Assistant')
 
 		requests.get(endpoint)
 
 	except:
-		print 'Something went wrong in \'mod_sms\' module'
+		print ('Something went wrong in \'mod_sms\' module')
 
 run('send sms to me saying Hello World')
